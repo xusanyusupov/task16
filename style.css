@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #ffffff 70%);
+
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 6px;
+    transition: .1s ease-in-out;
+    border-radius: 4px;
+}
+.wrap,
+.wrap p,
+.wrap img{
+    user-select: none; 
+}
+.wrap:hover{
+    background-color: rgba(0, 0, 0, 0.116);
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+}
+.Tg{
+    color: #ffffff;
+}
+
+
+.telegram{
+    width: 450px;
+    height: 800px;
+    position: fixed;
+    background-color: rgb(25, 39, 59);
+    border-radius: 50px;
+    display: none;
+    border: 15px solid #000;
+    overflow: hidden;
+}
+.tg__wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.clock_cam_top{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #0000003d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 100;
+}
+.clock_cam_top i{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    z-index: 1;
+}
+.clock{
+    font-weight: 700;
+    color: #ffffff;
+}
+.wifi{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cam{
+    width: 135px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 20px;
+    margin-right: -40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.c{
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: .5s ease;
+    z-index: 1001;
+}
+.bottom:hover{
+    height: 15px;
+    box-shadow: 0 0 45px #fff;
+}
+.bar_user{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(14, 22, 33);
+    position: absolute;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    z-index: 1;
+}
+.bar i{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.userNAME{
+    text-align: center;
+    margin-right: -25px;
+}
+.userNAME b{
+    color: #fff;
+    font-size: 15px;
+}
+.userNAME p{
+    color: blue;
+    font-size: 12px;
+}
+.userIMG{
+    width: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+}
+.userIMG i{
+    color: #fff;
+}
+.saidbar{
+    width: 300px;
+    height: 100vh;
+    background-color: #050c22;
+    position: absolute; 
+    top: 0;
+    left: -400px;    
+    z-index: 99; 
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+.fa-solid.fa-circle-xmark{
+    padding: 20px 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    float: right;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    bottom: 20%;
+}
+.fa-solid.fa-circle-xmark:hover{
+    background-color: #07102c;
+}
+.account{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 15px;
+    color: #fff;
+    width: 100%;
+    padding: 20px 20px;
+}
+.account:hover{
+    cursor: pointer;
+    background-color: #07102c;
+}
+.account i{
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.setting{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    padding: 20px 10px;
+    font-size: 18px;
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+.item:hover{
+    cursor: pointer;
+    background-color: #07102c;
+}
+.form{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-top: -80px;
+    background-color: #07102c;
+}
+.form input{
+    outline: none;
+    flex: 1;
+    background-color: #07102c;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 15px;
+    height: 50px;
+}
+.form input:hover{
+    background-color: #081742;
+}
+.form input::placeholder{
+    color: #ffffff;
+}
+.form button{
+    padding: 4px 8px;
+}
+#btn{
+    width: 50px;
+    height: 50px;
+    background-color: #07102c;
+    border: 0;
+    color: #fff;
+}
+#btn:hover{
+    background-color: #081742;
+}
+.send{
+    height: 50px;
+    background-color: #07102c;
+    border: 0;
+    color: #fff;
+}
+.send:hover{
+    background-color: #081742;
+}
+.chat{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 80px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.chat::-webkit-scrollbar{
+    width: 5px;
+}
+.msg_wrapper{
+    flex: 1;
+    padding: 12px;
+}
+.msg{
+    width: 250px;
+    padding: 12px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 16px 16px 0 16px;
+    margin: 10px 0;
+}
+.msg span{
+    display: block;
+    text-align: right;
+}
+.msg.me{
+    margin-left: calc(100% - 250px);
+    background-color: blue;
+    color: #fff;
+}
